@@ -43,7 +43,7 @@ def main():
     ff = ffmpegHandler(input,intermed,ffmpeg_path)
     
     
-    #ff.splitInput()
+    ff.splitInput()
     upscale(neuralNet, "frames", upscaleLoc)
     ff.combineToVideo(upscaleLoc, "upscaled.mp4", "23.976215")
     ff.addSound()
